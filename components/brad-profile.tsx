@@ -1,7 +1,7 @@
 import {ArrowUpRight} from 'lucide-react';
 const highlights=[
- {value:'$400M',label:'Sales volume',detail:'Real estate, personally considered.'},
- {value:'Southern California',label:'A sense of place',detail:'The homes. The neighborhoods. The way you want to live.'},
+ {value:'$400M+',label:'Sales volume',detail:'Real estate, personally considered.'},
+ {value:'24+',label:'Years of experience',detail:'A personal perspective on Southern California real estate.'},
  {value:'Equity Union',label:'Brokerage affiliation',detail:'An independent personal identity. An established brokerage connection.'},
  {value:'Selling SoCal',label:'A new chapter',detail:'Brad Roth on Selling SoCal. Coming soon to Apple TV.'},
 ] as const;
