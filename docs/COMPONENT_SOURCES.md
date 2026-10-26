@@ -14,4 +14,6 @@ Scroll UI: the user supplied the Skiper31 text-scroll-animation component (prese
 
 - Architectural hero headline: self-hosted Geist Sans (Vercel), SIL Open Font License 1.1. Latin variable font distributed with Next.js; license in `public/fonts/Geist-LICENSE.txt`.
 
-- Current architectural hero headline: Bebas Neue by Ryoichi Tsunekawa, sourced from Google Fonts, self-hosted under SIL Open Font License 1.1. License: `public/fonts/Bebas-Neue-LICENSE.txt`. Replaces Geist for this heading.
+- Previous architectural hero headline: Bebas Neue by Ryoichi Tsunekawa, sourced from Google Fonts, self-hosted under SIL Open Font License 1.1. License: `public/fonts/Bebas-Neue-LICENSE.txt`. Replaces Geist for this heading.
+
+- Current architectural hero headline: Cormorant Garamond Medium, using the existing self-hosted Fontsource package. High-contrast serif letterforms replace the condensed sans-serif direction.
