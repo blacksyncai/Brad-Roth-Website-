@@ -78,6 +78,7 @@
 /* Scroll-linked typography and quiet, staggered reveals adapted from the supplied UI. */
 .text-scroll-heading{position:relative}.text-scroll-heading .scroll-title-lead{display:block;color:#f8f9fb}.text-scroll-heading .scroll-title-line{display:block;perspective:650px;color:#b9bec8}.scroll-title-word{display:inline-block;white-space:nowrap;margin-right:.25em}.scroll-title-word:last-child{margin-right:0}.scroll-title-character{display:inline-block;transform-origin:50% 70%;backface-visibility:hidden}.lenis.lenis-smooth{scroll-behavior:auto!important}.brad-profile .brad-highlight{will-change:auto}@media(prefers-reduced-motion:reduce){.scroll-title-character{transform:none!important;opacity:1!important}.brad-profile .brad-highlight{transform:none!important;opacity:1!important}}
 
-/* Modern wordmark typography, self-hosted to avoid external font requests. */
-@font-face{font-family:"Geist";src:url("/fonts/geist-latin.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
-.theme-architectural .short-arch-masthead h1{font-family:"Geist",Arial,sans-serif;font-weight:600;letter-spacing:-.045em;line-height:1.02}
+/* A tall, condensed display face gives Brad's name its own identity. */
+@font-face{font-family:"Bebas Neue";src:url("/fonts/bebas-neue.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+.theme-architectural .short-arch-masthead h1{font-family:"Bebas Neue","Arial Narrow",Arial,sans-serif;font-size:clamp(100px,10.7vw,170px);font-weight:400;letter-spacing:.005em;line-height:.86}
+@media(max-width:760px){.theme-architectural .short-arch-masthead h1{font-size:clamp(100px,25vw,150px)}}
