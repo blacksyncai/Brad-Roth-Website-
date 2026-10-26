@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {ArrowUpRight,ArrowDown} from 'lucide-react';
 import {themes,type Theme,content} from '@/lib/content';
 import {Navigation} from '@/components/navigation';
+import {SmoothScroll} from '@/components/smooth-scroll';
 import {BradProfile} from '@/components/brad-profile';
 import {SocalAnnouncement} from '@/components/socal-announcement';
 import {Affiliation} from '@/components/shared';
@@ -12,7 +13,7 @@ import HoverPlayCard from '@/components/ui/hover-play-card';
 export function ConceptPage({theme}:{theme:Theme}){
  const selected=themes.find(t=>t.slug===theme)!;
  const film=<HoverPlayCard autoPlay loop minimalControls src="/media/brad-roth-commercial.mp4" poster="/media/commercial-poster.jpg" className="concept-hero-film"/>;
- return <div className={`theme theme-${theme} concept-only`}>
+ return <SmoothScroll enabled={theme==='architectural'}><div className={`theme theme-${theme} concept-only`}>
   <a className="skip-link" href="#main">Skip to content</a>
   <nav className="concept-topbar" aria-label="Homepage concepts"><span>BRG <span className="topbar-divider">/</span> Homepage concepts</span><div>{themes.map((t,i)=><Link key={t.slug} href={`/preview/${t.slug}/`} aria-current={theme===t.slug?'page':undefined} aria-label={`Concept ${i+1}: ${t.title}`}>{i+1}</Link>)}</div><span className="topbar-title">{selected.title}</span></nav>
   <Navigation theme={theme}/>
@@ -25,5 +26,5 @@ export function ConceptPage({theme}:{theme:Theme}){
    <section id="about" className="short-intro"><div className="short-intro-portrait"><Image src={theme==='architectural'?'/media/brad-headshot.webp':'/media/brad-portrait.webp'} alt="Brad Roth’s supplied portrait" width={theme==='architectural'?1111:619} height={theme==='architectural'?1449:586}/></div><div className="short-intro-copy"><p className="eyebrow">Meet Brad Roth</p><h2>{theme==='architectural'?<>ONE AGENT.<br/>YOUR NEXT CHAPTER.</>:theme==='california'?<>Your next chapter,<br/><em>with Brad.</em></>:<>Real estate.<br/><em>Personally considered.</em></>}</h2><p>{content.introduction}</p></div><div className="short-intro-contact" id="brokerage"><Affiliation/><p>{content.about}</p><details id="contact" className="concept-inquiry"><summary className="action">Let’s start a conversation <ArrowUpRight size={16}/></summary><Contact sectionId="inquiry"/></details></div></section>
   </main>
   <footer className="short-footer"><span>BRAD ROTH GROUP · EQUITY UNION</span><span>Design concept {selected.number} · Contact details and disclosures pending confirmation.</span></footer>
- </div>;
+ </div></SmoothScroll>;
 }
