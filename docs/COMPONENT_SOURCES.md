@@ -7,3 +7,5 @@ Changes to the supplied component: autoplay mode for the requested main hero, mu
 The pasted component did not identify its original 21st.dev author, URL or license. Its inclusion is grounded in the user's explicit supplied-code integration request; no unverifiable author attribution or external license claim is made. Obtain its upstream attribution before redistributing it separately as a component package.
 
 Dependency licenses remain included in installed packages: React, Next.js, Tailwind, Radix Slot, class-variance-authority, clsx, tailwind-merge and Framer Motion use MIT licenses; Lucide uses ISC. Cormorant Garamond and Manrope are self-hosted through Fontsource and distributed under SIL Open Font License 1.1. No proprietary font extracted from the brokerage PDF is used.
+
+Apple TV mark: Simple Icons (`icons/appletv.svg`, CC0 collection), sourced from https://github.com/simple-icons/simple-icons/blob/develop/icons/appletv.svg. Added beside the supplied Apple TV announcement at the user's request. A CSS mask gives the small mark a metallic color treatment inspired by the user's reference; no affiliation beyond the user's supplied announcement is added.
