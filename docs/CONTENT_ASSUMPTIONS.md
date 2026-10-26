@@ -10,4 +10,4 @@ All form submissions are local transient preview state. No backend, email, analy
 
 The root homepage uses the supplied commercial as an autoplaying muted hero per the user's follow-up. All three original concept routes remain available for comparison. Reduced-motion visitors get a still poster with deliberate playback available. Browser autoplay restrictions may require a click; playback is never forced with sound.
 
-The user explicitly supplied and requested the announcement “BRAD ROTH ON SELLING SOCAL — COMING SOON TO APPLE TV.” It is displayed verbatim beneath the navigation across all concepts. No release date, streaming URL or other program details were invented. The banner links to the on-page inquiry prototype until an approved show destination is supplied.
+The user explicitly supplied and requested the announcement “BRAD ROTH ON SELLING SOCAL — COMING SOON TO APPLE TV.” Its message is displayed as a compact, dismissible note beneath the navigation across all concepts. No release date, streaming URL or other program details were invented. The banner links to the on-page inquiry prototype until an approved show destination is supplied.

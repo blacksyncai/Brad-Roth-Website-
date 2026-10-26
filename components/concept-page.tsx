@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {ArrowUpRight,ArrowDown} from 'lucide-react';
 import {themes,type Theme,content} from '@/lib/content';
 import {Navigation} from '@/components/navigation';
+import {SocalAnnouncement} from '@/components/socal-announcement';
 import {Affiliation} from '@/components/shared';
 import {Contact} from '@/components/contact';
 import HoverPlayCard from '@/components/ui/hover-play-card';
@@ -14,7 +15,7 @@ export function ConceptPage({theme}:{theme:Theme}){
   <a className="skip-link" href="#main">Skip to content</a>
   <nav className="concept-topbar" aria-label="Homepage concepts"><span>BRG <span className="topbar-divider">/</span> Homepage concepts</span><div>{themes.map((t,i)=><Link key={t.slug} href={`/preview/${t.slug}/`} aria-current={theme===t.slug?'page':undefined} aria-label={`Concept ${i+1}: ${t.title}`}>{i+1}</Link>)}</div><span className="topbar-title">{selected.title}</span></nav>
   <Navigation theme={theme}/>
-  <aside className="socal-announcement" id="selling-socal" aria-label="Selling SoCal announcement"><a href="#contact">BRAD ROTH ON SELLING SOCAL <span>—</span> COMING SOON TO APPLE TV <ArrowUpRight size={17} aria-hidden="true"/></a></aside>
+  <SocalAnnouncement/>
   <main id="main">
    {theme==='editorial'?<section className="short-hero short-editorial">{film}<div className="short-hero-copy"><p className="eyebrow">BRAD ROTH GROUP · EQUITY UNION</p><h1>Your next chapter.<br/><em>Starts here.</em></h1><p>A personal perspective on a place to call home.</p><a href="#about" className="short-hero-action">Discover Brad <ArrowDown size={16}/></a></div><span className="short-film-caption">A PERSONAL INTRODUCTION / BRAD ROTH</span></section>
    :theme==='architectural'?<section className="short-hero short-architectural"><div className="short-arch-masthead"><p className="eyebrow">BRAD ROTH GROUP / A PERSONAL PERSPECTIVE</p><h1>BRAD<br/>ROTH.</h1><p className="short-arch-bio">Brad Roth is the name behind Brad Roth Group, affiliated with Equity Union. A personal perspective on real estate—and your next chapter.</p><a href="#about">GET TO KNOW BRAD <ArrowUpRight size={18}/></a></div><div className="short-arch-video">{film}<span className="short-film-caption">REAL ESTATE. PERSONALLY CONSIDERED.</span></div></section>
